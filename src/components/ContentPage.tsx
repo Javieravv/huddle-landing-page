@@ -1,6 +1,6 @@
 import { Container, Row, Image, Col, Button } from "react-bootstrap"
 import { FC } from "react"
-import '../scss/content-main.scss';
+import '../scss/styles-main.scss';
 
 interface itemPage {
     title: string;
@@ -93,7 +93,7 @@ export const ContentPage = () => {
                 <Col
                     as={'div'}
                     className="ready-tobuild d-flex flex-column align-items-center justify-content-center border border-2 shadow position-absolute bg-body rounded-2 text-center"
-                    lg={6} md={6} xs={11}
+                    lg={6} md={8} xs={11}
                     style={{
                         top: '10px'
                     }}

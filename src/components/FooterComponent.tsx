@@ -1,5 +1,5 @@
 import { Col, Container, Row, Image  } from 'react-bootstrap';
-import '../scss/footer-component.scss';
+import '../scss/styles-main.scss';
 
 export const FooterComponent = () => {
     return (
@@ -10,21 +10,19 @@ export const FooterComponent = () => {
         >
             <Container
                 as={'section'}
-                className='text-white '
-                style={{
-                    paddingTop: '90px',
-                    paddingBottom: '15px'
-                }}
+                className='footer-main text-white '
             >
                 <Row>
-                    <div>
+                    <Col
+                        lg={2} md={3} xs={5}
+                    >
                         <Image
                             src="/images/logo-1.svg"
                             alt='Logo 1'
                             fluid
                             className='mb-3'
                         />
-                    </div>
+                    </Col>
                 </Row>
                 <Row>
                     <Col xs={12} md={6} lg={3}>
@@ -96,17 +94,17 @@ export const FooterComponent = () => {
                             <Image 
                                 src="/images/facebook.svg"
                                 alt="Facebook"
-                                className='img-social me-2'
+                                className='img-social me-3'
                             />
                             <Image 
                                 src="/images/twitter.svg"
                                 alt="Facebook"
-                                className='img-social me-2'
+                                className='img-social me-3'
                             />
                             <Image 
                                 src="/images/instagram.svg"
                                 alt="Facebook"
-                                className='img-social me-2'
+                                className='img-social me-3'
                             />
                         </div>
                         <div>

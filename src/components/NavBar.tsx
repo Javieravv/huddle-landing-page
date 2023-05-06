@@ -1,5 +1,5 @@
 import { Image, Button, Container, Col } from "react-bootstrap"
-import '../scss/navbar.scss';
+import '../scss/styles-main.scss';
 
 export const NavBar = () => {
     return (

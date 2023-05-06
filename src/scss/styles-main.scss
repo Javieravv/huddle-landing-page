@@ -1,7 +1,4 @@
 @import '../../node_modules/bootstrap/scss/mixins';
-// @import '../../node_modules/bootstrap/scss/functions';
-// @import '../../node_modules/bootstrap/scss/variables';
-
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 
@@ -19,14 +16,14 @@ body {
 
 ul,
 li {
-    list-style: none;
+    list-style: none !important;
     margin: 0 !important;
     padding: 0 !important;
 }
 
 h1,
 h2 {
-    font-family: $font-family-headings;
+    font-family: $font-family-headings !important;
 }
 
 .header-main {
@@ -39,5 +36,98 @@ h2 {
     @include media-breakpoint-down(md) {
         background: url('/images/bg-hero-mobile.svg');
         background-color: rgb(210, 252, 255);
+    }
+}
+
+/***********************************************************************************
+Css para el NAVBAR
+*************************************************************************************/
+.navbar-main {
+    
+    .div-logo {
+        width: '20%';
+        
+        .img-logo {
+            // width: 300px !important;
+            width: fit-content;
+        }
+    }
+    
+    button {
+        padding: 10px 50px !important;
+        border: none !important;
+        // border: 1px solid black;
+    }
+
+    
+    // media queries
+    @include media-breakpoint-down(md) {
+        .img-logo {}
+
+        button {
+            padding: 5px 10px !important;
+            background-color: white !important;
+            border: none !important;
+            font-size: 15px !important;
+        }
+    }
+}
+
+/***********************************************************************************
+Css para el HEADER COMPONENT
+*************************************************************************************/
+.btn-page {
+    background-color: $color-Pink-primary !important;
+    border: none !important;
+    border-radius: 25px !important;
+    padding: 15px 50px !important;
+    transition: all 0.3s ease-in-out !important;
+
+    &:hover {
+        opacity: 0.6 !important;
+    }
+}
+
+
+/***********************************************************************************
+Css para el footer component 
+*************************************************************************************/
+
+.footer-component {
+    background: $color-VeryDarkCyan-neutral;
+
+    .footer-main {
+        padding-top: 90px;
+        padding-bottom: 15px;
+    }
+
+    p {
+        font-size: 0.9rem !important;
+    }
+
+    .img-footer {
+        width: 25px;
+    }
+
+    .option-footer {}
+
+    .img-social {
+        width: 30px;
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+            fill: green;
+        }
+    }
+}
+
+/***********************************************************************************
+Css para el Content Component
+*************************************************************************************/
+
+.content-main {
+    .ready-tobuild {
+        min-height: 200px;
     }
 }

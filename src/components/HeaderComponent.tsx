@@ -1,5 +1,5 @@
 import { Button, Col, Container, Row, Image } from "react-bootstrap"
-import '../scss/header-component.scss';
+import '../scss/styles-main.scss';
 
 export const HeaderComponent = () => {
   return (
