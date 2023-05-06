@@ -1,0 +1,24 @@
+@import '../../node_modules/bootstrap/scss/mixins';
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import './variables';
+
+.footer-component {
+    background: $color-VeryDarkCyan-neutral;
+
+    p {
+        font-size: 0.9rem !important;
+    }
+
+    .img-footer {
+        width: 25px;
+    }
+
+    .option-footer {
+
+    }
+
+    .img-social {
+        width: 30px;
+        color: white;
+    }
+}

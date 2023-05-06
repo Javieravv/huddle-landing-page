@@ -1,0 +1,14 @@
+// Css para el Header
+@import './variables';
+
+.btn-page {
+    background-color: $color-Pink-primary !important;
+    border: none !important;
+    border-radius: 25px !important;
+    padding: 15px 50px !important;
+    transition: all 0.3s ease-in-out !important;
+
+    &:hover {
+        opacity: 0.6 !important;
+    }
+}

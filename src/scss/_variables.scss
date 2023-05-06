@@ -1,0 +1,19 @@
+// Variables utilizadas
+
+//* Colores
+
+$color-Pink-primary: hsl(322, 100%, 66%);
+$color-VeryPaleCyan-neutral: hsl(193, 100%, 96%);
+$color-VeryDarkCyan-neutral: hsl(192, 100%, 9%);
+$color-GrayishBlue-neutral: hsl(208, 11%, 55%);
+
+// Fuentes
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+$font-family-headings: 'Poppins', sans-serif;
+$font-family-body: 'Open Sans', sans-serif;
+$font-size: 18px;
+
+// NavBar
+$height-navbar: 60px;
