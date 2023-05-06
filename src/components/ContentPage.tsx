@@ -2,7 +2,7 @@ import { Container, Row, Image, Col, Button } from "react-bootstrap"
 import { FC } from "react"
 import '../scss/content-main.scss';
 
-interface itemPage  {
+interface itemPage {
     title: string;
     description: string;
     image: string;
@@ -30,33 +30,33 @@ const itemPage: itemPage[] = [
     }
 ]
 
-const ItemPage:FC<itemPage> = ({ title, description, image, classes }) => {
+const ItemPage: FC<itemPage> = ({ title, description, image, classes }) => {
     return (
         <Row
             as={'article'}
-            className={`d-flex align-items-center mt-5 border border-2 rounded-4 shadow pb-5 pt-5 text-center text-md-start ${ classes }`}
+            className={`d-flex align-items-center mt-5 border border-2 rounded-4 shadow pb-5 pt-5 text-center text-md-start ${classes}`}
         >
-            <Col 
+            <Col
                 as={'div'}
                 xs={12} md={6}
                 className="ps-5 pe-5"
             >
-                <h2>{ title }</h2>
-                <p> {description } </p>
+                <h2>{title}</h2>
+                <p> {description} </p>
             </Col>
-            <Col 
+            <Col
                 as={'div'}
                 xs={12} md={6}
             >
-                <Image 
-                    src= {image}
-                    alt = {image}
+                <Image
+                    src={image}
+                    alt={image}
                     fluid={true}
                     width={'80%'}
                 />
             </Col>
         </Row>
-    )    
+    )
 }
 
 export const ContentPage = () => {
@@ -71,26 +71,30 @@ export const ContentPage = () => {
         >
             <Row
                 as={'div'}
-                className="mb-5"
+                className="div-items mb-5"
             >
-                {
-                    itemPage.map( item => (
-                        <ItemPage 
-                            key={item.title}
-                            title={item.title}
-                            description={item.description}
-                            image={item.image}
-                            classes={item.classes}
-                        />
-                    ))
-                }
+                <Col
+                    className="me-2 ms-2"
+                >
+                    {
+                        itemPage.map(item => (
+                            <ItemPage
+                                key={item.title}
+                                title={item.title}
+                                description={item.description}
+                                image={item.image}
+                                classes={item.classes}
+                            />
+                        ))
+                    }
+                </Col>
             </Row>
             <Row className="justify-content-center position-relative">
-                <Col 
+                <Col
                     as={'div'}
                     className="ready-tobuild d-flex flex-column align-items-center justify-content-center border border-2 shadow position-absolute bg-body rounded-2 text-center"
                     lg={6} md={6} xs={11}
-                    style = {{
+                    style={{
                         top: '10px'
                     }}
                 >
